@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "5a81b24a-21ce-451f-9507-e485f57dcd37",
+		"name": "DemystDataCodingExercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get providers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/v1.0.0/kfnvk3224fn/providers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"v1.0.0",
+						"kfnvk3224fn",
+						"providers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get balancesheet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/v1.0.0/kfnvk3224fn/balancesheet?businessName=ABC Enterprise&accountProvider=MYOB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"v1.0.0",
+						"kfnvk3224fn",
+						"balancesheet"
+					],
+					"query": [
+						{
+							"key": "businessName",
+							"value": "ABC Enterprise"
+						},
+						{
+							"key": "accountProvider",
+							"value": "MYOB"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submit loan request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"businessName\": \"Tanvir Industries\",\r\n    \"accountProvider\": \"MYOB\",\r\n    \"loanAmount\": 426.02\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/v1.0.0/kfnvk3224fn/submit/loanrequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"v1.0.0",
+						"kfnvk3224fn",
+						"submit",
+						"loanrequest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
