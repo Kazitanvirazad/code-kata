@@ -1,3 +1,6 @@
+# Go to FrontEnd-ReactApp/ and run commands - 1) npm install 2) npm run build
+# In project directory run commands - 1) npm install 2) npm run start
+
 # Exercise
 
 The goal of the project is to build a simple business loan application system.
