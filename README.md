@@ -1,4 +1,5 @@
 <h2> To run the app in docker execute command : sh dockerscript.sh</h2>
+<h2>To run locally execute below commands :</h2>
 <h3> Go to FrontEnd-ReactApp/ and run commands - 1) npm install 2) npm run build</h3>
 <h3> In project directory run commands - 1) npm install 2) npm run start</h3>
 

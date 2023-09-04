@@ -6,6 +6,7 @@ import FormElement from "./FormElement";
 import BalanceSheetTableBody from "./BalanceSheetTableBody";
 import BalanceSheetTableHeader from "./BalanceSheetTableHeader";
 import Service from "./Service";
+import BusinessNames from "./BusinessNames";
 
 let requestData = {};
 
@@ -103,6 +104,7 @@ const LoanFormPage = () => {
     return (
         <>
             <div className="container">
+                <BusinessNames />
                 <FormElement formData={formData} handleChange={handleChange}
                     handleSelectChange={handleSelectChange} requestBalanceSheetHandler={requestBalanceSheet}
                     options={options} />
